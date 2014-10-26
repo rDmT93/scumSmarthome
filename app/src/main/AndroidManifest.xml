@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="home.scum.com.scumintelligenthome" >
+    package="intelligent.home.scum.com.fragmentlistexample" >
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/apex"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".Scum_Activity"
+            android:name=".ScumMainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScumRoomActivity"
+            android:label="@string/title_activity_scum_room"
+            android:parentActivityName=".ScumMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScumMainActivity" />
+        </activity>
+        <activity
+            android:name=".ScumIndividualRoom"
+            android:label="@string/title_activity_scum_individual_room"
+            android:parentActivityName=".ScumMainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScumRoomActivity" />
         </activity>
     </application>
 

@@ -1,4 +1,4 @@
-package home.scum.com.scumintelligenthome;
+package intelligent.home.scum.com.fragmentlistexample;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
