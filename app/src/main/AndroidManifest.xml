@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="intelligent.home.scum.com.fragmentlistexample" >
 
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/apex"
@@ -27,10 +32,18 @@
         <activity
             android:name=".ScumIndividualRoom"
             android:label="@string/title_activity_scum_individual_room"
-            android:parentActivityName=".ScumMainActivity">
+            android:parentActivityName=".ScumRoomActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ScumRoomActivity" />
+        </activity>
+        <activity
+            android:name=".ScumMediaController"
+            android:label="@string/title_activity_scum_media_controller"
+            android:parentActivityName=".ScumIndividualRoom">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ScumIndividualRoom" />
         </activity>
     </application>
 

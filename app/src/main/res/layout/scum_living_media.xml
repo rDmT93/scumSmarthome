@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Media Controller"
+        android:id="@+id/media_controller_header"
+        android:textSize="30dp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="364dp">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvToggleButton"
+            android:layout_marginBottom="5dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:textOn="TV"
+            android:textOff="TV"
+            android:onClick="indToggle"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dvdToggleButton"
+            android:layout_marginBottom="5dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:textOn="DVD"
+            android:textOff="DVD"
+            android:onClick="indToggle"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hsToggleButton"
+            android:layout_marginBottom="5dp"
+            android:layout_column="4"
+            android:layout_row="0"
+            android:textOn="HomeSystem"
+            android:textOff="HomeSystem"
+            android:onClick="indToggle"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/allToggleButton"
+            android:layout_marginBottom="5dp"
+            android:layout_column="5"
+            android:layout_row="0"
+            android:textOn="All"
+            android:textOff="All"
+            android:onClick="allToggle"/>
+
+        <!-- VOLUME UP AND DOWN -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/upVolButton"
+            android:layout_row="1"
+            android:layout_column="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Volume"
+            android:id="@+id/tv_volume"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/downVolButton"
+            android:layout_row="3"
+            android:layout_column="2" />
+
+        <!-- Channel UP AND DOWN -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/upChButton"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Channel"
+            android:id="@+id/tv_channel"
+            android:layout_column="4"
+            android:layout_row="2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/downChButton"
+            android:layout_row="3"
+            android:layout_column="4"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/empty"
+            android:layout_column="2"
+            android:layout_row="4"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/muteButton"
+            android:src="@drawable/ic_sound_mute"
+            android:layout_row="5"
+            android:layout_column="2" />
+    </GridLayout>
+
+</LinearLayout>

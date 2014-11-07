@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Kitchen"
+        android:id="@+id/kitchen_header"
+        android:textSize="34dp"
+        android:layout_marginTop="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lights"
+        android:id="@+id/kitchen_lights"
+        android:checked="false" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oven"
+        android:id="@+id/kitchen_oven"
+        android:checked="false" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Microwave"
+        android:id="@+id/kitchen_microwave"
+        android:checked="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plates"
+        android:layout_margin="15dp"
+        android:textSize="20dp"/>
+    <!-- COOKING PLATE 1 -->
+    <GridLayout
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/cookingplate_layout">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:id="@+id/cookingplate1"
+            android:src="@drawable/cooking1"
+            android:layout_row="0"
+            android:layout_column="0" />
+        <!--*****************-->
+        <!-- COOKING PLATE 3 -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:id="@+id/cookingplate2"
+            android:src="@drawable/cooking1"
+            android:layout_row="1"
+            android:layout_column="0" />
+        <GridLayout
+            android:layout_width="37dp"
+            android:layout_height="fill_parent"
+            android:layout_row="1"
+            android:layout_column="1">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/upPlate3"
+                android:src="@drawable/up"
+                android:scaleType="center"/>
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/downPlate3"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:src="@drawable/down"
+                android:scaleType="center"/>
+        </GridLayout>
+        <!--*****************-->
+        <!-- COOKING PLATE 4 -->
+        <ImageButton
+            android:layout_width="82dp"
+            android:layout_height="100dp"
+            android:id="@+id/cookingplate4"
+            android:src="@drawable/cooking1"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:scaleType="fitCenter"/>
+
+        <GridLayout
+            android:layout_width="37dp"
+            android:layout_height="fill_parent"
+            android:layout_row="1"
+            android:layout_column="3">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/upPlate4"
+                android:src="@drawable/up"
+                android:scaleType="center"/>
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/downPlate4"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:src="@drawable/down"
+                android:scaleType="center"/>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="37dp"
+            android:layout_height="fill_parent"
+            android:layout_row="0"
+            android:layout_column="1">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/upPlate1"
+                android:src="@drawable/up"
+                android:scaleType="center"/>
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/downPlate1"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:src="@drawable/down"
+                android:scaleType="center"/>
+        </GridLayout>
+        <!--*****************-->
+        <!-- COOKING PLATE 2 -->
+        <ImageButton
+            android:layout_width="96dp"
+            android:layout_height="118dp"
+            android:id="@+id/cookingplate3"
+            android:src="@drawable/cooking1"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:scaleType="fitCenter"/>
+        <GridLayout
+            android:layout_width="37dp"
+            android:layout_height="fill_parent"
+            android:layout_row="0"
+            android:layout_column="3">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/upPlate2"
+                android:src="@drawable/up"
+                android:scaleType="center"/>
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/downPlate2"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:src="@drawable/down"
+                android:scaleType="center"/>
+        </GridLayout>
+
+    </GridLayout>
+
+</LinearLayout>

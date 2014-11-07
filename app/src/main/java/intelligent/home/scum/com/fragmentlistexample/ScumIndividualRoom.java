@@ -1,9 +1,11 @@
 package intelligent.home.scum.com.fragmentlistexample;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 
@@ -18,6 +20,15 @@ public class ScumIndividualRoom extends Activity {
             String title = bnd.getString("choice");
             if((title != null) && !title.equals("Lights")){
                 getActionBar().setTitle(title);
+                if(title.equals("Living Room")){
+                    setContentView(R.layout.scum_living);
+                }
+                if(title.equals("Kitchen")){
+                    setContentView(R.layout.scum_kitchen);
+                }
+                if(title.equals("Bathroom")){
+                    setContentView(R.layout.scum_bathroom);
+                }
             }else{
                 return;
             }
@@ -43,4 +54,10 @@ public class ScumIndividualRoom extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public void goToMedia(View view){
+        Intent intent = new Intent(this, ScumMediaController.class);
+        startActivity(intent);
+    }
+
 }

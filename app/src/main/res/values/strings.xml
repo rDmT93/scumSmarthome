@@ -10,5 +10,7 @@
     <string name="bathroom">Bath Room</string>
     <string name="title_activity_scum_room">ScumRoomActivity</string>
     <string name="title_activity_scum_individual_room">ScumIndividualRoom</string>
+    <string name="title_activity_scum_media_controller">Media Controller</string>
+    <string name="plates">Cooking Plates</string>
 
 </resources>
